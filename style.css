@@ -1,0 +1,156 @@
+/*
+https://source.unsplash.com/weekly?water
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: aquamarine;
+    background-image: url('un.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8), url(login.jpg));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgb(255, 255, 255);
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    }
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: blueviolet;
+    position: relative;
+
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-field {
+    background: whitesmoke;
+    margin: 15px 0;
+    border-radius: 15px; /* Increased border radius for rounded corners */
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    border: 2px solid transparent; /* Transparent border initially */
+}
+
+.input-field:hover {
+    border-color: black; /* Border color changes to black on hover */
+}
+
+
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px 20px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: blueviolet;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+
+
+}
+
+form p a{
+    text-decoration: none;
+    color: purple;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: blueviolet;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 'background' 1s;
+
+}
+
+.input-group{
+    height: 280px;
+
+}
+
+.btn-field button.disable{
+    background: #ccc;
+    color: white;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .left-checkbox {
+    margin-right: auto;
+  }
+  
+  .right-checkbox {
+    margin-left: auto;
+  }
+
+  #SignUpBtn:hover {background-color: lightskyblue;}
+  #SignInBtn:hover {background-color: lightskyblue;}
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn & SignUp Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a9826f0c5.js" crossorigin="anonymous"></script>
+   
+</head>
+<body class="body">
+    <div class="conatiner">
+        <div class="form-box">
+            
+            <form>
+                <div class="login-container"></div>
+                    <div class="imgcontainer">
+                      <img src="saffo logo.png" alt="saffoTech" class="avatar">
+                    </div>
+                    <h1 id="title">SignUp</h1>
+                    
+                <div class="input-group">
+
+                    <div class="input-field" id="nameField">
+                        <i class='fas fa-user-alt'></i>
+                      <input type="text" placeholder="Username" required >
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-key" ></i>
+                        <input type="text" placeholder="Employee_id" required>
+                      </div>
+
+                    
+                    <div class="input-field" id="emailField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text"  pattern=".+@example\.com" placeholder="email" required>
+                      </div>
+                      
+                      <div class="input-field">
+                        <i class='fas fa-lock'></i>
+                        <input type="password" placeholder="password" required>
+                        
+    
+                      </div>  
+
+                      <div class="input-field" id="nameField">
+                        <i class='fas fa-lock'></i>
+                        <input type="password" placeholder="confirm -password" required>
+                      </div>  
+                      <p >Lost password <a href="#"> Click Here</a></p>    
+                </div>
+                <br>
+                <div class="form-container">
+                    <label class="left-checkbox">
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <label class="right-checkbox">
+                      <input type="checkbox" checked="checked" name="showpassword"> Show password
+                    </label>
+                  </div>
+                  
+
+                <div class="btn-field">
+                    <button type="submit" id="SignUpBtn">SignUp</button>
+                    <button type="submit" id="SignInBtn" class="disable">SignIn</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let SignUpBtn = document.getElementById("SignUpBtn");
+        let SignInBtn = document.getElementById("SignInBtn");
+        let nameField = document.getElementById("nameField");
+        let emailField = document.getElementById("emailField")
+        let title = document.getElementById("title");
+
+        SignInBtn.onclick =function(){
+            SignUpBtn.classList.add("disable");
+            SignInBtn.classList.remove("disable");
+            title.textContent = "SignIn";
+            nameField.style.display = "none";
+            emailField.style.display = "none";
+
+        }
+        
+    </script>
+</body>
+</html>
